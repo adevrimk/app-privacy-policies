@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - File Manager</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: var(--bg-secondary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 16px;
+        }
+
+        section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.1);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 .icon {
+            font-size: 1.5rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            color: var(--text-secondary);
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+        }
+
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .contact-box {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .contact-box a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .contact-box a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">📁</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">File Manager App</p>
+            <span class="last-updated">Last Updated: December 25, 2024</span>
+        </header>
+
+        <section>
+            <h2><span class="icon">🔒</span> Our Commitment</h2>
+            <p>File Manager is committed to protecting your privacy. This Privacy Policy explains how we handle
+                information when you use our application.</p>
+            <div class="highlight-box">
+                <p><strong>Your files stay on your device.</strong> We do not collect, store, or transmit your personal
+                    files to any external servers.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="icon">📊</span> Information We Access</h2>
+            <p>To provide file management functionality, our app requires access to:</p>
+            <ul>
+                <li><strong>Storage Access:</strong> To browse, view, copy, move, rename, and delete files on your
+                    device</li>
+                <li><strong>Media Files:</strong> To display and play images, videos, and audio files</li>
+                <li><strong>Notifications:</strong> To show media playback controls and file operation progress</li>
+            </ul>
+            <p>All file operations are performed locally on your device. No file data is transmitted externally.</p>
+        </section>
+
+        <section>
+            <h2><span class="icon">📡</span> Network Usage</h2>
+            <p>Our app uses internet connectivity for:</p>
+            <ul>
+                <li><strong>Advertisements:</strong> We display ads through Google AdMob to support free access to the
+                    app</li>
+            </ul>
+            <p>AdMob may collect device identifiers and usage data according to Google's Privacy Policy.</p>
+        </section>
+
+        <section>
+            <h2><span class="icon">🔐</span> Data Security</h2>
+            <p>We implement security measures to protect your data:</p>
+            <ul>
+                <li>Safe Folder feature uses device-level encryption</li>
+                <li>No personal data is transmitted to external servers</li>
+                <li>File operations are processed entirely on your device</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><span class="icon">🧒</span> Children's Privacy</h2>
+            <p>File Manager does not knowingly collect personal information from children under 13. The app is designed
+                as a general utility tool and does not target children.</p>
+        </section>
+
+        <section>
+            <h2><span class="icon">🔄</span> Policy Updates</h2>
+            <p>We may update this Privacy Policy periodically. Any changes will be reflected on this page with an
+                updated revision date. We encourage you to review this policy occasionally.</p>
+        </section>
+
+        <section class="contact-box">
+            <h2><span class="icon">✉️</span> Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p style="margin-top: 16px;"><a href="mailto:adevrimk@gmail.com">adevrimk@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>© 2024 File Manager. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
